@@ -3,14 +3,22 @@ const path = require('path');
 const express = require('express');
 const db = require('./config/connection'); 
 const { seedDatabase } = require('./seeders/seed');
-
+//Apollo Server
 const { ApolloServer } = require('@apollo/server');
+
+//Authentication Middleware
 const { authMiddleware } = require('./utils/auth');
 
+//Updated version of Apollo, its grabbing the express middleware fro ma different place
 const { expressMiddleware } = require('@apollo/server/express4');
+
+//GraphQL
 const { typeDefs, resolvers } = require('./schemas');
+
+//Cords framework prevents people using all our API calls on our service 
 const cors = require('cors');
 
+//Basic app express
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -42,12 +50,15 @@ if(process.env.NODE_ENV !== 'production' || process.env.ENABLE_SEED === 'true'){
   });
 }
 
+//Apollo Server
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  //authMiddleware for authentication so we can do login for users
   context: authMiddleware,
 })
 
+//Start Server API and GraphQL installing Apollo with "cors"
 const startServer = async() => {
   await server.start();
   app.use('/graphql', cors(), expressMiddleware(server));

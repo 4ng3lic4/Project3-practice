@@ -1,0 +1,26 @@
+
+[
+    {
+      "name": "Roses",
+      "description": "Flowers that grow in different colors",
+      "price":"10.00",
+      "animalSafe": "Cats only",
+      "careLevel": "Low",
+      "growthHabit": "Medium",
+      "soilRequirements": "Fertilizer annually",
+      "light": "6 hours a day",
+      "air": "It purifies and scents the air"
+    },
+    {
+        "name": "Lilly",
+        "description": "Flowers that grow in different colors",
+        "price":"20.00",
+        "animalSafe": "Dogs only",
+        "careLevel": "Low",
+        "growthHabit": "Medium",
+        "soilRequirements": "Fertilizer annually",
+        "light": "12 hours a day",
+        "air": "It does not purify the air"
+      }
+  ]
+  

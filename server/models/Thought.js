@@ -1,3 +1,4 @@
+//This file will be replaced by Plants.js
 const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
