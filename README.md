@@ -1,2 +1,1 @@
-# Project3-practice
-Mockup
+# awesome-taco-blog
