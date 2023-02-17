@@ -12,7 +12,7 @@
     "plantAuthor": "Kent Beck"
   },
   {
-    "name": "Africal Violet",
+    "name": "Africa Violet",
     "description": "Flowers that grow in different colors",
     "price": 10.0,
     "soilRequirements": "well draining",
@@ -40,7 +40,7 @@
     "description": "Flowers that grow in different colors",
     "price": 10.0,
     "soilRequirements": "well draining",
-    "light": "fluorocent to full sun",
+    "light": "fluorescent to full sun",
     "growthHabit": "upright",
     "air": "air-cleaning",
     "careLevel": "easy",
@@ -53,7 +53,7 @@
     "description": "Flowers that grow in different colors",
     "price": 10.0,
     "soilRequirements": "well draining",
-    "light": "fluorocent to full sun",
+    "light": "fluorescent to full sun",
     "growthHabit": "upright",
     "air": "air-cleaning",
     "careLevel": "moderate",
