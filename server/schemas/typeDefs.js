@@ -16,7 +16,7 @@ const typeDefs = gql`
     name: String
     plantAuthor: String
     description: String
-    price: Number,
+    price: Float,
     animalSafe: String,
     careLevel: String,
     growthHabit: String,
@@ -41,7 +41,7 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
-    plant(username: String): [Plant]
+    plants(username: String): [Plant]
     plant(plantId: ID!): Plant
     me: User
   }

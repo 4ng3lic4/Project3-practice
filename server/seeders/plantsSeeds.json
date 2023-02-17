@@ -1,0 +1,154 @@
+[
+  {
+    "name": "Spider Plant",
+    "description": "Flowers that grow in different colors",
+    "price": 10.0,
+    "soilRequirements": "well draining",
+    "light": "fluorescent to full sun",
+    "growthHabit": "compact",
+    "air": "air-cleaning",
+    "careLevel": "easy",
+    "animalSafe": "Cats",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Africal Violet",
+    "description": "Flowers that grow in different colors",
+    "price": 10.0,
+    "soilRequirements": "well draining",
+    "light": "indirect light",
+    "growthHabit": "cascading",
+    "air": "air-cleaning",
+    "careLevel": "easy",
+    "animalSafe": "cats/dogs",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Boston Fern",
+    "description": "Flowers that grow in different colors",
+    "price": 10.0,
+    "soilRequirements": "potting mix",
+    "light": "bright indirect light",
+    "growthHabit": "cascading",
+    "air": "air-cleaning",
+    "careLevel": "easy",
+    "animalSafe": "cats/dogs",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Parlor Palm",
+    "description": "Flowers that grow in different colors",
+    "price": 10.0,
+    "soilRequirements": "well draining",
+    "light": "fluorocent to full sun",
+    "growthHabit": "upright",
+    "air": "air-cleaning",
+    "careLevel": "easy",
+    "animalSafe": "cats/dogs",
+    "plantAuthor": "Kent Beck"
+  },
+
+  {
+    "name": "Calathea Ornata",
+    "description": "Flowers that grow in different colors",
+    "price": 10.0,
+    "soilRequirements": "well draining",
+    "light": "fluorocent to full sun",
+    "growthHabit": "upright",
+    "air": "air-cleaning",
+    "careLevel": "moderate",
+    "animalSafe": "cats",
+    "plantAuthor": "Kent Beck"
+  },
+
+  {
+    "name": "Orchid",
+    "description": "Flowers that grow in different colors",
+    "price": 10.0,
+    "soilRequirements": "potting mix",
+    "light": "medium indirect light",
+    "growthHabit": "upright",
+    "air": "air-cleaning",
+    "careLevel": "moderate",
+    "animalSafe": "dogs",
+    "plantAuthor": "Kent Beck"
+  },
+
+  {
+    "name": "Watermelon Peperomia",
+    "description": "Flowers that grow in different colors",
+    "price": 10.0,
+    "soilRequirements": "well draining",
+    "light": "fluorescent to bright indirect",
+    "growthHabit": "compact",
+    "air": "air-cleaning",
+    "careLevel": "easy",
+    "animalSafe": "cats",
+    "plantAuthor": "Kent Beck"
+  },
+
+  {
+    "name": "Christmas Cactus",
+    "description": "Flowers that grow in different colors",
+    "price": 10.0,
+    "soilRequirements": "well draining",
+    "light": "bright indirect light",
+    "growthHabit": "compact",
+    "air": "air-cleaning",
+    "careLevel": "easy",
+    "animalSafe": "cats",
+    "plantAuthor": "Kent Beck"
+  },
+
+  {
+    "name": "Money Tree",
+    "description": "Flowers that grow in different colors",
+    "price": 10.0,
+    "soilRequirements": "potting mix",
+    "light": "fluorescent or bright indirect light",
+    "growthHabit": "upright ",
+    "air": "air-cleaning",
+    "careLevel": "moderate",
+    "animalSafe": "cats/dogs",
+    "plantAuthor": "Kent Beck"
+  },
+
+  {
+    "name": "Birds Nest Fern",
+    "description": "Flowers that grow in different colors",
+    "price": 10.0,
+    "soilRequirements": "potting mix",
+    "light": "low light",
+    "growthHabit": "compact",
+    "air": "air-cleaning",
+    "careLevel": "easy",
+    "animalSafe": "cats/dogs",
+    "plantAuthor": "Kent Beck"
+  },
+
+  {
+    "name": "Hindu Rope Plant",
+    "description": "Flowers that grow in different colors",
+    "price": 10.0,
+    "soilRequirements": "well draining",
+    "light": "fluorescent or bright indirect",
+    "growthHabit": "cascading",
+    "air": "air-cleaning",
+    "careLevel": "easy",
+    "animalSafe": "cats/dogs",
+    "plantAuthor": "Kent Beck"
+  },
+
+  {
+    "name": "Prayer Plant",
+    "description": "Flowers that grow in different colors",
+    "price": 10.0,
+    "soilRequirements": "well drained soil, part sand",
+    "light": "fluorescent or bright indirect",
+    "growthHabit": "cascading",
+    "air": "air-cleaning",
+    "careLevel": "moderate",
+    "animalSafe": "dogs",
+    "plantAuthor": "Kent Beck"
+  }
+]

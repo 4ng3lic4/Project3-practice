@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test jest --watchAll --verbose",
-    "seed": "node seed",
+    "seed": "node seeders/seed.js",
     "start": "node server.js",
     "develop": "nodemon server.js"
   },

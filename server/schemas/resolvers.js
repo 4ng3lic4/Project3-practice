@@ -10,7 +10,7 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username }).populate('plant');
     },
-    plant: async (parent, { username }) => {
+    plants: async (parent, { username }) => {
       const params = username ? { username } : {};
       return Plant.find(params).sort({ createdAt: -1 });
     },

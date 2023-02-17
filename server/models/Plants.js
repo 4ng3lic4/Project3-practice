@@ -62,7 +62,7 @@ const plantSchema = new Schema({
       },
       createdAt: {
         type: Date,
-        default: Date.now.toLocalDateString()
+        default: Date.now
       }
     },
   ],
