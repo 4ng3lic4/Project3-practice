@@ -1,28 +1,25 @@
-//Delete this line
-const { User, Thought } = require('../models');
+
 
 //add
 const { User, Plant } = require('../models');
 const userSeeds = require('./userSeeds.json');
 
 
-//This line will be replaced
-const thoughtSeeds = require('./thoughtSeeds.json');
 
 //by this one
-const plantsSeeds = require('./plantsSeeds.json');
+const plantSeeds = require('./plantsSeeds.json');
 
 const seedDatabase = async () => {
   try {
-    await Thought.deleteMany({});
+    await Plant.deleteMany({});
     await User.deleteMany({});
 
     await User.create(userSeeds);
 
-    for (let i = 0; i < thoughtSeeds.length; i++) {
-      const { _id, thoughtAuthor } = await Thought.create(thoughtSeeds[i]);
+    for (let i = 0; i < plantSeeds.length; i++) {
+      const { _id, plantAuthor } = await Plant.create(plantSeeds[i]);
       const user = await User.findOneAndUpdate(
-        { username: thoughtAuthor },
+        { username: plantAuthor },
         {
           $addToSet: {
             thoughts: _id,

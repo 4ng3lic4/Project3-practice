@@ -1,26 +1,24 @@
-//This file will replace Thoughts.js
-const { Schema, model } = require('mongoose');
-const bcrypt = require('bcrypt');
-//What is this saltRounds?
-const saltRounds = 10;
-
+const { Schema, model } = require("mongoose");
 
 //Check if light and  price are also a Strings
-const plantsSchema = new Schema({
+const plantSchema = new Schema({
   name: {
     type: String,
     required: true,
     unique: true,
-    trim: true,
+  },
+  plantAuthor: {
+    type: String,
+    required: true,
+    trim: true
   },
   description: {
     type: String,
     required: true,
     unique: true,
-
   },
   price: {
-    type: String,
+    type: Number,
     required: true,
   },
 
@@ -53,64 +51,25 @@ const plantsSchema = new Schema({
     type: String,
     required: true,
   },
-
-//   thoughts: [
-//     {
-//       type: Schema.Types.ObjectId,
-//       ref: 'Thought',
-//     },
-//   ],
+  comments: [
+    {
+      comment_text: {
+        type: String,
+      },
+      comment_author: {
+        type: String,
+        required: true,
+      },
+      createdAt: {
+        type: Date,
+        default: Date.now.toLocalDateString()
+      }
+    },
+  ],
 });
-// created pre-hook functions I could export for the purpose of testing
-const hashPassword = async function (next) {
-  if (this.isNew || this.isModified('password')) {
-    this.password = await bcrypt.hash(this.password, saltRounds);
-  }
 
-  next();
+const Plant = model("Plant", plantSchema);
+
+module.exports = {
+  Plant,
 };
-
-// created pre-hook functions I could export for the purpose of testing
-const hashAllPasswords = async function (next, docs) {
-  if(Array.isArray(docs) && docs.length) {
-    const hashedUsers = docs.map( async (user) => {
-      user.password = await bcrypt.hash(user.password, saltRounds);
-      return user;
-    });
-    const users = await Promise.all(hashedUsers);
-    next();
-  }
-  else{
-    return next(new Error("User list should not be empty"));
-  }
-
-  next();
-};
-
-// set up pre-save middleware to create password
-userSchema.pre('save', hashPassword);
-userSchema.pre('insertMany', hashAllPasswords);
-
-userSchema.methods.isCorrectPassword = async function (password) {
-  return bcrypt.compare(password, this.password);
-};
-
-
-const User = model('User', userSchema);
-
-if(process.env.NODE_ENV === "test"){
-  module.exports = { 
-    User,
-    //UNIT TEST EXPORT
-    userSchema,
-    //UNIT TEST EXPORT
-    hashPassword,
-    //UNIT TEST EXPORT
-    hashAllPasswords
-  };
-}
-else{
-  module.exports = { 
-    User
-  };
-}

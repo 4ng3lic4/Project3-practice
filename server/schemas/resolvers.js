@@ -1,25 +1,25 @@
 
-const { User, Thought } = require('../models');
+const { User, Plant } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find().populate('thoughts');
+      return User.find().populate('plant');
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate('thoughts');
+      return User.findOne({ username }).populate('plant');
     },
-    thoughts: async (parent, { username }) => {
+    plant: async (parent, { username }) => {
       const params = username ? { username } : {};
-      return Thought.find(params).sort({ createdAt: -1 });
+      return Plant.find(params).sort({ createdAt: -1 });
     },
-    thought: async (parent, { thoughtId }) => {
-      return Thought.findOne({ _id: thoughtId });
+    plant: async (parent, { plantId }) => {
+      return Plant.findOne({ _id: plantId });
     },
     me: async (parent, args, context) => {
       if (context.user) {
-        return User.findOne({ _id: context.user._id }).populate('thoughts');
+        return User.findOne({ _id: context.user._id }).populate('plant');
       }
       throw new AuthenticationError('You need to be logged in!');
     },
@@ -48,29 +48,29 @@ const resolvers = {
 
       return { token, user };
     },
-    addThought: async (parent, { thoughtText }, context) => {
+    addPlant: async (parent, { name }, context) => {
       if (context.user) {
-        const thought = await Thought.create({
-          thoughtText,
-          thoughtAuthor: context.user.username,
+        const plant = await Plant.create({
+          name,
+          plantAuthor: context.user.username,
         });
 
         await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $addToSet: { thoughts: thought._id } }
+          { $addToSet: { plants: plant._id } }
         );
 
-        return thought;
+        return plant;
       }
       throw new Error('You need to be logged in!');
     },
-    addComment: async (parent, { thoughtId, commentText }, context) => {
+    addComment: async (parent, { plantId, comment_text }, context) => {
       if (context.user) {
-        return Thought.findOneAndUpdate(
-          { _id: thoughtId },
+        return Plant.findOneAndUpdate(
+          { _id: plantId },
           {
             $addToSet: {
-              comments: { commentText, commentAuthor: context.user.username },
+              comments: { comment_text, comment_author: context.user.username },
             },
           },
           {
@@ -81,31 +81,31 @@ const resolvers = {
       }
       throw new Error('You need to be logged in!');
     },
-    removeThought: async (parent, { thoughtId }, context) => {
+    removePlant: async (parent, { plantId }, context) => {
       if (context.user) {
-        const thought = await Thought.findOneAndDelete({
-          _id: thoughtId,
-          thoughtAuthor: context.user.username,
+        const plant = await Plant.findOneAndDelete({
+          _id: plantId,
+          plantAuthor: context.user.username,
         });
 
         await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $pull: { thoughts: thought._id } }
+          { $pull: { plant: plant._id } }
         );
 
-        return thought;
+        return plant;
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    removeComment: async (parent, { thoughtId, commentId }, context) => {
+    removeComment: async (parent, { plantId, commentId }, context) => {
       if (context.user) {
-        return Thought.findOneAndUpdate(
-          { _id: thoughtId },
+        return Plant.findOneAndUpdate(
+          { _id: plantId },
           {
             $pull: {
               comments: {
                 _id: commentId,
-                commentAuthor: context.user.username,
+                comment_author: context.user.username,
               },
             },
           },
