@@ -3,7 +3,6 @@
 //add
 const { User, Plant } = require('../models');
 const userSeeds = require('./userSeeds.json');
-
 const plantSeeds = require('./plantsSeeds.json');
 
 const seedDatabase = async () => {

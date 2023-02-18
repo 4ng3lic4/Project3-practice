@@ -9,13 +9,13 @@ const { ApolloServer } = require('@apollo/server');
 //Authentication Middleware
 const { authMiddleware } = require('./utils/auth');
 
-//Updated version of Apollo, its grabbing the express middleware fro ma different place
+//Upgraded version of Apollo, its grabbing the express middleware fro ma different place
 const { expressMiddleware } = require('@apollo/server/express4');
 
 //GraphQL
 const { typeDefs, resolvers } = require('./schemas');
 
-//Cords framework prevents people using all our API calls on our service 
+//Cors framework prevents people using all our API calls on our service 
 const cors = require('cors');
 
 //Basic app express
