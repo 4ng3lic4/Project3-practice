@@ -1,6 +1,8 @@
+
 const { userSchema, hashPassword, hashAllPasswords } = require('../../models/User.js');
 const bcrypt = require('bcrypt');
 
+//Unit Test that is making sure that the user Schema inside de model (Users.js) has all the values in it.
 describe('User Schema', () => {
   describe('Properties should be defined and validated', () => {
     it('should have username', () => {
