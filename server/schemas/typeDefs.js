@@ -32,7 +32,7 @@ const typeDefs = gql`
     comment_author: String
     createdAt: String
   }
-
+# Don't delete or change the token, as it is needed for authentication protocol
   type Auth {
     token: ID!
     user: User
@@ -48,6 +48,7 @@ const typeDefs = gql`
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
+    # this login matches the token in the resolvers.js
     login(email: String!, password: String!): Auth
     addPlant(name: String!): Plant
     addComment(plantId: ID!, comment_text: String!): Plant

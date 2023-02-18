@@ -45,7 +45,7 @@ const resolvers = {
       }
 
       const token = signToken(user);
-
+// login that is going to create and return a token as part of the authentication protocol
       return { token, user };
     },
     addPlant: async (parent, { name }, context) => {
@@ -95,8 +95,12 @@ const resolvers = {
 
         return plant;
       }
+      //Review this part that was returning an error even after being logged in in Anthony's template
       throw new AuthenticationError('You need to be logged in!');
     },
+
+    //Checking for the context to add the user
+    /**When we create the token, it identifies the user which creates a context and it is created by the authentication Middleware inside auth.js; once it verifies the user, it will put it as part of the request for the user   */
     removeComment: async (parent, { plantId, commentId }, context) => {
       if (context.user) {
         return Plant.findOneAndUpdate(
