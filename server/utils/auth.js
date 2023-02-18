@@ -19,7 +19,7 @@ module.exports = {
     }
 
     try {
-      //Its joing to look for the JSON web token
+      //Its going to look for the JSON web token
       const { data } = jwt.verify(token, secret, { maxAge: expiration });
       req.user = data;
     } catch {

@@ -1,6 +1,8 @@
 
 const { User, Plant } = require('../models');
 const { signToken } = require('../utils/auth');
+//Deleted  
+// const {AuthenticationError } = require('apollo-server-express')
 
 const resolvers = {
   Query: {
@@ -21,7 +23,7 @@ const resolvers = {
       if (context.user) {
         return User.findOne({ _id: context.user._id }).populate('plant');
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError('You need to be logged in -test1!');
     },
   },
 
@@ -62,7 +64,9 @@ const resolvers = {
 
         return plant;
       }
-      throw new Error('You need to be logged in!');
+     
+     // throw new AuthenticationError('You need to be logged in!'); <-Deleted and replaced by line below
+     throw new Error('You need to be logged in -test2!');
     },
     addComment: async (parent, { plantId, comment_text }, context) => {
       if (context.user) {
@@ -79,7 +83,7 @@ const resolvers = {
           }
         );
       }
-      throw new Error('You need to be logged in!');
+      throw new Error('You need to be logged in -test3!');
     },
     removePlant: async (parent, { plantId }, context) => {
       if (context.user) {
@@ -96,7 +100,7 @@ const resolvers = {
         return plant;
       }
       //Review this part that was returning an error even after being logged in in Anthony's template
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError('You need to be logged in test-4!');
     },
 
     //Checking for the context to add the user
@@ -116,7 +120,8 @@ const resolvers = {
           { new: true }
         );
       }
-      throw new Error('You need to be logged in!');
+      // throw new AuthenticationError('You need to be logged in!'); <-Deleted and replaced by line below
+      throw new Error('You need to be logged in -test5!');
     },
   },
 };
