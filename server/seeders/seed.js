@@ -1,35 +1,32 @@
+// //add
+// const { User, Plant } = require("../models");
+// const userSeeds = require("./userSeeds.json");
+// const plantSeeds = require("./plantsSeeds.json");
 
+// const seedDatabase = async () => {
+//   try {
+//     await Plant.deleteMany({});
+//     await User.deleteMany({});
 
-//add
-const { User, Plant } = require('../models');
-const userSeeds = require('./userSeeds.json');
-const plantSeeds = require('./plantsSeeds.json');
+//     await User.create(userSeeds);
 
-const seedDatabase = async () => {
-  try {
-    await Plant.deleteMany({});
-    await User.deleteMany({});
+//     for (let i = 0; i < plantSeeds.length; i++) {
+//       const { _id, plantAuthor } = await Plant.create(plantSeeds[i]);
+//       const user = await User.findOneAndUpdate(
+//         { username: plantAuthor },
+//         {
+//           $addToSet: {
+//             plant: _id,
+//           },
+//         }
+//       );
+//     }
+//     console.log("all done!");
+//   } catch (err) {
+//     console.error(err);
+//   }
+// };
 
-    await User.create(userSeeds);
-
-    for (let i = 0; i < plantSeeds.length; i++) {
-      const { _id, plantAuthor } = await Plant.create(plantSeeds[i]);
-      const user = await User.findOneAndUpdate(
-        { username: plantAuthor },
-        {
-          $addToSet: {
-            thoughts: _id,
-          },
-        }
-      );
-    }
-    console.log('all done!');
-  } catch (err) {
-    console.error(err);
-  }
-
-};
-
-module.exports = {
-  seedDatabase
-}
+// module.exports = {
+//   seedDatabase,
+// };

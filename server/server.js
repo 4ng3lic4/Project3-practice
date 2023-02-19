@@ -20,7 +20,7 @@ const cors = require('cors');
 
 //Basic app express
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 5001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -34,21 +34,21 @@ if(process.env.NODE_ENV === 'production'){
 
 // if not production, enable seed, 
 // if in production, only enable seed when the process.env.ENABLE_SEED var is true
-if(process.env.NODE_ENV !== 'production' || process.env.ENABLE_SEED === 'true'){
-  app.post('/seedDatabase', async (req, res) => {
-    const result = await seedDatabase();
-    if(result.message === "completed seed"){
-      res.status(200);
-    }
-    else{
-      res.status(500);
-    }
-    res.json(result);
-  });
-  app.delete('/seedDatabase', async (req, res) => {
-    res.status(200).json(result);
-  });
-}
+// if(process.env.NODE_ENV !== 'production' || process.env.ENABLE_SEED === 'true'){
+  // app.post('/seedDatabase', async (req, res) => {
+//  seedDatabase();
+    // if(result.message === "completed seed"){
+    //   res.status(200);
+    // }
+    // else{
+    //   res.status(500);
+    // }
+    // res.json(result);
+  // });
+  // app.delete('/seedDatabase', async (req, res) => {
+  //   res.status(200).json(result);
+  // });
+// }
 
 //Apollo Server
 const server = new ApolloServer({

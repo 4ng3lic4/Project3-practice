@@ -13,7 +13,7 @@
   },
   {
     "name": "Africa Violet",
-    "description": "Flowers that grow in different colors",
+    "description": "Flowers that grow in different colors2",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "indirect light",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Boston Fern",
-    "description": "Flowers that grow in different colors",
+    "description": "Flowers that grow in different colors3",
     "price": 10.0,
     "soilRequirements": "potting mix",
     "light": "bright indirect light",
@@ -37,7 +37,7 @@
   },
   {
     "name": "Parlor Palm",
-    "description": "Flowers that grow in different colors",
+    "description": "Flowers that grow in different colors4",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "fluorescent to full sun",
@@ -50,7 +50,7 @@
 
   {
     "name": "Calathea Ornata",
-    "description": "Flowers that grow in different colors",
+    "description": "Flowers that grow in different colors5",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "fluorescent to full sun",
@@ -63,7 +63,7 @@
 
   {
     "name": "Orchid",
-    "description": "Flowers that grow in different colors",
+    "description": "Flowers that grow in different colors6",
     "price": 10.0,
     "soilRequirements": "potting mix",
     "light": "medium indirect light",
@@ -76,7 +76,7 @@
 
   {
     "name": "Watermelon Peperomia",
-    "description": "Flowers that grow in different colors",
+    "description": "Flowers that grow in different colors7",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "fluorescent to bright indirect",
@@ -89,7 +89,7 @@
 
   {
     "name": "Christmas Cactus",
-    "description": "Flowers that grow in different colors",
+    "description": "Flowers that grow in different colors8",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "bright indirect light",
@@ -102,7 +102,7 @@
 
   {
     "name": "Money Tree",
-    "description": "Flowers that grow in different colors",
+    "description": "Flowers that grow in different colors9",
     "price": 10.0,
     "soilRequirements": "potting mix",
     "light": "fluorescent or bright indirect light",
@@ -115,7 +115,7 @@
 
   {
     "name": "Birds Nest Fern",
-    "description": "Flowers that grow in different colors",
+    "description": "Flowers that grow in different colors10",
     "price": 10.0,
     "soilRequirements": "potting mix",
     "light": "low light",
@@ -128,7 +128,7 @@
 
   {
     "name": "Hindu Rope Plant",
-    "description": "Flowers that grow in different colors",
+    "description": "Flowers that grow in different colors11",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "fluorescent or bright indirect",
@@ -141,7 +141,7 @@
 
   {
     "name": "Prayer Plant",
-    "description": "Flowers that grow in different colors",
+    "description": "Flowers that grow in different colors12",
     "price": 10.0,
     "soilRequirements": "well drained soil, part sand",
     "light": "fluorescent or bright indirect",

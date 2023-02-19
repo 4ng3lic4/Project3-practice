@@ -47,6 +47,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
+    seed: String
     addUser(username: String!, email: String!, password: String!): Auth
     # this login matches the token in the resolvers.js
     login(email: String!, password: String!): Auth
