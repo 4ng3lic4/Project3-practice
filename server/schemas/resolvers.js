@@ -1,6 +1,9 @@
 
 const { User, Plant } = require('../models');
 const { signToken } = require('../utils/auth');
+
+const userSeeds = require("../seeders/userSeeds.json");
+const plantSeeds = require("../seeders/plantsSeeds.json");
 //Deleted  
 // const {AuthenticationError } = require('apollo-server-express')
 
@@ -28,6 +31,30 @@ const resolvers = {
   },
 
   Mutation: {
+    seed: async()=>{
+      try {
+        await Plant.deleteMany({});
+        await User.deleteMany({});
+    
+        await User.create(userSeeds);
+    
+        for (let i = 0; i < plantSeeds.length; i++) {
+          const { _id, plantAuthor } = await Plant.create(plantSeeds[i]);
+          const user = await User.findOneAndUpdate(
+            { username: plantAuthor },
+            {
+              $addToSet: {
+                plant: _id,
+              },
+            }
+          );
+        }
+        return "all done!";
+      } catch (err) {
+        console.error(err);
+      }
+    },
+
     addUser: async (parent, { username, email, password }) => {
       const user = await User.create({ username, email, password });
       const token = signToken(user);

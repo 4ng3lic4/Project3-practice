@@ -10,12 +10,12 @@ const plantSchema = new Schema({
   plantAuthor: {
     type: String,
     required: true,
-    trim: true
+    trim: true,
   },
   description: {
     type: String,
     required: true,
-    unique: true,
+    // unique: false,
   },
   price: {
     type: Number,
@@ -37,7 +37,7 @@ const plantSchema = new Schema({
     required: true,
   },
 
-  soilRequirement: {
+  soilRequirements: {
     type: String,
     required: true,
   },
@@ -47,7 +47,7 @@ const plantSchema = new Schema({
     required: true,
   },
 
-  Air: {
+  air: {
     type: String,
     required: true,
   },
@@ -62,8 +62,8 @@ const plantSchema = new Schema({
       },
       createdAt: {
         type: Date,
-        default: Date.now
-      }
+        default: Date.now,
+      },
     },
   ],
 });
