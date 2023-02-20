@@ -1,7 +1,7 @@
 [
   {
     "name": "Spider Plant",
-    "description": "Flowers that grow in different colors",
+    "description": "This clump-forming, perennial, herbaceous plant, native to coastal areas of South Africa, has narrow, strap-shaped leaves arising from a central point. The leaves may be solid green or variegated with lengthwise stripes of white or yellow. ",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "fluorescent to full sun",
@@ -13,31 +13,31 @@
   },
   {
     "name": "Africa Violet",
-    "description": "Flowers that grow in different colors2",
+    "description": "African violets are one of the world's most popular houseplants and for good reason. These compact, low-growing plants flower several times a year, and they are available in a multitude of leaf forms and colors.",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "indirect light",
-    "growthHabit": "cascading",
-    "air": "air-cleaning",
+    "growthHabit": "compact",
+    "air": "none",
     "careLevel": "easy",
     "animalSafe": "cats/dogs",
     "plantAuthor": "Kent Beck"
   },
   {
     "name": "Boston Fern",
-    "description": "Flowers that grow in different colors3",
+    "description": " Boston ferns have been grown as a tropical accent plant indoors and on patios. This easy-to-grow plant has long, sword-shaped green fronds that arch gracefully as they get older.",
     "price": 10.0,
     "soilRequirements": "potting mix",
     "light": "bright indirect light",
     "growthHabit": "cascading",
-    "air": "air-cleaning",
+    "air": "none",
     "careLevel": "easy",
     "animalSafe": "cats/dogs",
     "plantAuthor": "Kent Beck"
   },
   {
     "name": "Parlor Palm",
-    "description": "Flowers that grow in different colors4",
+    "description": "This rainforest native is a single-trunk palm with a compact habit and handsome arching green pinnate leaves comprised of narrow leaflets. It may bear clusters of yellow flowers in spring if it gets enough light. ",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "fluorescent to full sun",
@@ -50,7 +50,7 @@
 
   {
     "name": "Calathea Ornata",
-    "description": "Flowers that grow in different colors5",
+    "description": "The Calathea Ornata is a perennial plant that is part of the family known as the prayer plants or the Maranta family. The plant is known for its large leaves that have a distinctive pattern and effervescent colors.",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "fluorescent to full sun",
@@ -63,7 +63,7 @@
 
   {
     "name": "Orchid",
-    "description": "Flowers that grow in different colors6",
+    "description": "Orchids widely range in size and appearance, depending on the specific variety and species. The blooms generally have an exotic shape. Orchids also vary in color, appearing in shades of pink, green, dark purple, lavender, violet, blue, yellow, to white.",
     "price": 10.0,
     "soilRequirements": "potting mix",
     "light": "medium indirect light",
@@ -76,7 +76,7 @@
 
   {
     "name": "Watermelon Peperomia",
-    "description": "Flowers that grow in different colors7",
+    "description": "Watermelon Peperomia is a tropical evergreen herbaceous shrub that is erect and bushy, grows up to 8 in tall. It is named Watermelon Peperomia because its leaves resemble the rind of a watermelon.",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "fluorescent to bright indirect",
@@ -89,7 +89,7 @@
 
   {
     "name": "Christmas Cactus",
-    "description": "Flowers that grow in different colors8",
+    "description": "Popular cactus that has flattened stems and is grown for its striking cerise flowers, blooming indoors about Christmas time in the Northern Hemisphere.",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "bright indirect light",
@@ -102,7 +102,7 @@
 
   {
     "name": "Money Tree",
-    "description": "Flowers that grow in different colors9",
+    "description": "An evergreen broadleaf tree with hand-shaped compound leaves consisting of up to 9 leaflets. Money trees often have a slightly swollen trunk base, which also serves as a water reservoir, and the bark is brown to grey.",
     "price": 10.0,
     "soilRequirements": "potting mix",
     "light": "fluorescent or bright indirect light",
@@ -115,7 +115,7 @@
 
   {
     "name": "Birds Nest Fern",
-    "description": "Flowers that grow in different colors10",
+    "description": "Bird's-nest ferns are evergreen, with solid, undivided fronds that may be a consistent width from top to bottom or taper, depending on the species.",
     "price": 10.0,
     "soilRequirements": "potting mix",
     "light": "low light",
@@ -128,7 +128,7 @@
 
   {
     "name": "Hindu Rope Plant",
-    "description": "Flowers that grow in different colors11",
+    "description": "The Hindu rope plant is a curly leaf version of the porcelain flower or wax plant. This semi-succulent, perennial, vine-like species is known for its lush, waxy foliage, unique curling vines, and striking blooms.",
     "price": 10.0,
     "soilRequirements": "well draining",
     "light": "fluorescent or bright indirect",
@@ -141,7 +141,7 @@
 
   {
     "name": "Prayer Plant",
-    "description": "Flowers that grow in different colors12",
+    "description": "The prayer plant is a low-growing evergreen perennial that spreads vegetatively with rhizomes. The brown blotches on either side of the midrib in young leaves change to emerald green and finally to moss green as they age, contrasting with the medium green leaf.",
     "price": 10.0,
     "soilRequirements": "well drained soil, part sand",
     "light": "fluorescent or bright indirect",
@@ -150,5 +150,150 @@
     "careLevel": "moderate",
     "animalSafe": "dogs",
     "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Aloe Vera",
+    "description": "abc ",
+    "price": 10.0,
+    "soilRequirements": " abc",
+    "light": "abc ",
+    "growthHabit": "abc ",
+    "air": " abc",
+    "careLevel": "abc ",
+    "animalSafe": "not safe",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Desert Rose",
+    "description": "abc2 ",
+    "price": 10.0,
+    "soilRequirements": " abc2",
+    "light": " abc2",
+    "growthHabit": "abc2 ",
+    "air": " abc2",
+    "careLevel": "abc2 ",
+    "animalSafe": "not safe",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "English Ivy",
+    "description": "abc3 ",
+    "price": 10.0,
+    "soilRequirements": " abc3 ",
+    "light": " abc3 ",
+    "growthHabit": " abc3 ",
+    "air": "abc3  ",
+    "careLevel": "abc3  ",
+    "animalSafe": "not safe",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Red-Marginated Dracaena",
+    "description": "abc4  ",
+    "price": 10.0,
+    "soilRequirements": "abc4  ",
+    "light": "abc4  ",
+    "growthHabit": " abc4 ",
+    "air": "abc4 ",
+    "careLevel": " abc4 ",
+    "animalSafe": "not safe",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Poinsettia",
+    "description": "abc5 ",
+    "price": 10.0,
+    "soilRequirements": "abc5  ",
+    "light": " abc5 ",
+    "growthHabit": "abc5  ",
+    "air": " abc5 ",
+    "careLevel": " abc5 ",
+    "animalSafe": "not safe",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Sago Palm",
+    "description": "abc6 ",
+    "price": 10.0,
+    "soilRequirements": " abc6",
+    "light": " abc6",
+    "growthHabit": "abc6 ",
+    "air": "abc6 ",
+    "careLevel": " abc6",
+    "animalSafe": "not safe",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Asparagus Fern",
+    "description": "abc7 ",
+    "price": 10.0,
+    "soilRequirements": "abc7 ",
+    "light": " abc7",
+    "growthHabit": " abc7",
+    "air": " abc7",
+    "careLevel": "abc7 ",
+    "animalSafe": "not safe",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Caladium Elephant Ear",
+    "description": "abc8 ",
+    "price": 10.0,
+    "soilRequirements": "abc8 ",
+    "light": " abc8",
+    "growthHabit": "abc8 ",
+    "air": "abc8 ",
+    "careLevel": " abc8",
+    "animalSafe": "not safe",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Begonia",
+    "description": "abc9",
+    "price": 10.0,
+    "soilRequirements": " abc9",
+    "light": " abc9",
+    "growthHabit": "abc09 ",
+    "air": "abc9 ",
+    "careLevel": "abc9 ",
+    "animalSafe": "not safe",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Geranium",
+    "description": "abc10 ",
+    "price": 10.0,
+    "soilRequirements": "abc10 ",
+    "light": " abc10",
+    "growthHabit": "abc10 ",
+    "air": " abc10",
+    "careLevel": "abc10 ",
+    "animalSafe": "not safe",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Snake Plant",
+    "description": "abc11 ",
+    "price": 10.0,
+    "soilRequirements": " abc11",
+    "light": "abc11 ",
+    "growthHabit": " abc11",
+    "air": "abc11 ",
+    "careLevel": "abc11 ",
+    "animalSafe": "not safe",
+    "plantAuthor": "Kent Beck"
+  },
+  {
+    "name": "Peace Lily",
+    "description": "abc12 ",
+    "price": 10.0,
+    "soilRequirements": " abc13",
+    "light": "abc123",
+    "growthHabit": "abc12 ",
+    "air": " abc12",
+    "careLevel": "abc12",
+    "animalSafe": "not safe",
+    "plantAuthor": "Kent Beck"
   }
+
 ]
