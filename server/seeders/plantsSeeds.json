@@ -253,7 +253,7 @@
     "price": 10.0,
     "soilRequirements": " abc9",
     "light": " abc9",
-    "growthHabit": "abc9 ",
+    "growthHabit": "abc09 ",
     "air": "abc9 ",
     "careLevel": "abc9 ",
     "animalSafe": "not safe",
